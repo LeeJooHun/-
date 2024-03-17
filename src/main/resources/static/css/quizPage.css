@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#leftImage, #rightImage {
+    width: 700px;
+    height: 700px;
+    cursor: pointer;
+    transition: transform 0.3s, width 1s, height 1s;
+}
+
+#leftImage:hover, #rightImage:hover {
+    transform: scale(1.1);
+}
+
+#genderImage{
+    position: absolute;
+    top:5%;
+    width: 75px;
+}
+
+h1 {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+}

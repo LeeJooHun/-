@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남 과 여</title>
+    <link rel="stylesheet" type="text/css" href="/css/quizPage.css">
+</head>
+<body>
+<form action="/quiz/{{id}}/check" method="get">
+    <input type="hidden" name="lr" id="lr" value="0">
+    <div class="container">
+        <div class="half" id="left">
+            <img src="/images/man.PNG" alt="man Image" id="genderImage">
+            <img src="/images/quiz{{id}}_1.jpg" alt="Quiz Image 1" id="leftImage">
+            <input type="submit" class="hidden" id="leftImageSubmit" value="Submit" style="display: none;">
+        </div>
+        <h2>Round {{round}}</h2>
+        <h1>{{keyword}}</h1>
+        <div class="half" id="right">
+            <img src="/images/girl.PNG" alt="girl Image" id="genderImage">
+            <img src="/images/quiz{{id}}_2.jpg" alt="Quiz Image 2" id="rightImage">
+            <input type="submit" class="hidden" id="rightImageSubmit" value="Submit" style="display: none;">
+        </div>
+    </div>
+</form>
+
+<script>
+    history.pushState(null, null, location.href);
+
+    window.onpopstate = function() {
+        history.go(1);
+    }
+    document.getElementById('leftImage').addEventListener('click', function() {
+        this.style.width = '1200px';
+        this.style.height = '1200px';
+        document.getElementById('lr').value = 1;
+        document.getElementById('leftImageSubmit').click();
+    });
+
+    document.getElementById('rightImage').addEventListener('click', function() {
+        this.style.width = '1200px';
+        this.style.height = '1200px';
+        document.getElementById('lr').value = 0;
+        document.getElementById('rightImageSubmit').click();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남 과 여</title>
+    <link rel="stylesheet" type="text/css" href="/css/endPage.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="/images/endding.PNG" class="full-width-img" alt="Full Width Image">
+    <h1>{{score}}</h1>
+</div>
+<a href="/main" class="myButton">재도전</a>
+<script>
+    history.pushState(null, null, location.href);
+
+    window.onpopstate = function() {
+        history.go(1);
+    }
+</script>
+</body>
+</html>
