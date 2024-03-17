@@ -1,6 +1,6 @@
-package com.example.bookstore.repository;
+package com.example.quiz.repository;
 
-import com.example.bookstore.entity.Quiz;
+import com.example.quiz.entity.Quiz;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

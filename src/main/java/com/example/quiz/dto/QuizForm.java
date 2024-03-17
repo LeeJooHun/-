@@ -1,6 +1,5 @@
-package com.example.bookstore.dto;
+package com.example.quiz.dto;
 
-import com.example.bookstore.entity.Quiz;
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 

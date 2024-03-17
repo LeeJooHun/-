@@ -1,7 +1,7 @@
-package com.example.bookstore.controller;
+package com.example.quiz.controller;
 
-import com.example.bookstore.dto.QuizCheck;
-import com.example.bookstore.service.QuizService;
+import com.example.quiz.dto.QuizCheck;
+import com.example.quiz.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

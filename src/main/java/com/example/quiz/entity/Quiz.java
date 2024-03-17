@@ -1,4 +1,4 @@
-package com.example.bookstore.entity;
+package com.example.quiz.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

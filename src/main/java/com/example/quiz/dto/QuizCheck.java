@@ -1,4 +1,4 @@
-package com.example.bookstore.dto;
+package com.example.quiz.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

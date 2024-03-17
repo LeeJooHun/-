@@ -1,8 +1,8 @@
-package com.example.bookstore.service;
+package com.example.quiz.service;
 
-import com.example.bookstore.dto.QuizCheck;
-import com.example.bookstore.entity.Quiz;
-import com.example.bookstore.repository.QuizRepository;
+import com.example.quiz.dto.QuizCheck;
+import com.example.quiz.entity.Quiz;
+import com.example.quiz.repository.QuizRepository;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
